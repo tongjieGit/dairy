@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Document</title>
+</head>
+<body>
+    <div id="book">
+        <span class="book-left"><img id="left-pic" src="images/1.jpg" alt=""></span>
+        <span class="book-line"></span>
+        <span class="book-right"><img id="right-pic" src="images/2.jpg" alt=""></span>
+    </div>
+</body>
+<link rel="stylesheet" href="style/book.css">
+<script src="data/picData.js" ></script>
+<script>
+    let modl = document.getElementById('book');
+    modl.style.height = `${window.screen.height}px`;
+    let imgArr = document.getElementById('book').getElementsByTagName('img');
+
+    function init() {
+        let book = new picBooks(picArray)
+        book.start()
+    }
+   
+    function picBooks(picArr ,imgArr) {
+        this.pics = picArr;
+        this.pages = arr.length;
+        this.modl = imgArr;
+        this.start = function () {
+            
+        }
+        
+    }
+
+
+
+    init();
+</script>
+</html>
